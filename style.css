@@ -1,4 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-body{
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #202025;
+  -webkit-box-shadow: 17px 17px 34px #0c0c0f, -17px -17px 34px #202025;
+  box-shadow: 17px 17px 34px #0c0c0f, -17px -17px 34px #202025;
+}
+
+.navbar-light{
+  color: white;
+}
+
+.container {
+  margin: 30px;
+  color: #fffffe;
+}
+
+p{
+  margin-right: 20%;
+}
+
+.educationLogo{
+  filter: saturate(10);
+  mix-blend-mode: multiply;
+  filter: brightness(1.1);
+  max-width: 100px;
+  max-height: 100px;
+  float: right;
+}
+
+/* Bootstrap customization */
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255,255,255,.55);
 }
