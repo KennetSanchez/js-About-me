@@ -20,10 +20,22 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <nav id = "menu" class="navbar navbar-expand-lg navbar-light" style="background-color: #2cb67d; color:white">
-      <div  class="container-fluid">
+    <nav
+      id="menu"
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #7f5af0; color: white"
+    >
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Who i am</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,7 +53,9 @@
   </head>
   <body>
     <section id="personalData" class="container">
+      <br />
       <h3>Hi, my name is Kennet Santiago Sánchez Roldán</h3>
+      <br />
       <p>
         I am 18 years old, I am a software engineering student and I am
         currently in the fourth semester. I have varied interests, but systems
@@ -52,7 +66,9 @@
       </p>
     </section>
     <section id="studies" class="container">
+      <br />
       <h2>My studies</h2>
+      <br />
       <ul>
         <li>
           <img
@@ -107,9 +123,78 @@
         </li>
       </ul>
     </section>
-    <section id="courses" class="container"></section>
+    <section id="courses" class="container">
+      <br />
+      <h2>Extras</h2>
+      <ul>
+        <li>
+          <h4>VIP</h4>
+          <p>
+            <br />
+            In this club I learned how to use Python, we learned to code as a
+            team with people from other careers, and other semesters. I was in
+            the development team of a KNN algorithm implemented in Python, we
+            plan to include our algorithm on the club's website so that anyone
+            interested can learn and see how this type of algorithm works.
+          </p>
+        </li>
+        <li>
+          <h4>Web development basics</h4>
+          <p>
+            <br />
+            In this course I learned how to handle my HTML pages with unique
+            identifiers and classes to style them with CSS, and how to connect
+            the pages with the scripts in JavaScript. We also learned how to use
+            Font-awesome icons, Google fonts, and the Bootstrap framework, as
+            well as the bases of web development.
+          </p>
+        </li>
+        <li>
+          <h4>Git and GitHub Basics</h4>
+          <p>
+            <br />
+            In this course, we learned how to use GitHub to work as a team, to
+            return to previous versions of the program, correct errors with the
+            merge, force changes in the repository history, as well as good
+            practices to separate the development of the program into branches
+            so that each member can work without being affected by bugs in the
+            code of their teammates
+          </p>
+        </li>
+        <li>
+          <h4>Linux: installation and basic operation</h4>
+          <p>
+            <br />
+            In this course, we learned how to install Fedora (Linux), manage
+            users, groups, permissions, and restrict access to the superuser. We
+            also learned to create a private network so that our colleagues
+            could view our pages, access our files remotely, among other things.
+          </p>
+        </li>
+      </ul>
+    </section>
     <section id="portfolio" class="container"></section>
-    <section id="socialMedia" class="container"></section>
+    <section id="socialMedia" class="container">
+      <script>
+        function github() {
+          window.open("https://github.com/KennetSanchez");
+        }
+
+        function linkedin() {
+          window.open(
+            "https://www.linkedin.com/in/kennet-santiago-sánchez-roldán-2a7191216/"
+          );
+        }
+      </script>
+      <section id="icons">
+        <button type="button" id="buttons-sm" class="btn btn-link">
+          <i class="fab fa-github" onclick="github()"></i>
+        </button>
+        <button type="button" id="buttons-sm" class="btn btn-link">
+          <i class="fab fa-linkedin" onclick="linkedin()"></i>
+        </button>
+      </section>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -117,3 +202,59 @@
     ></script>
   </body>
 </html>
+
+<!--
+  <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Institución educativa Tulio Enrique Tascón
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong><img
+                src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/6420172/image/411751df820e24e371bc5141416604ae"
+                alt="school logo"
+                class="educationLogo"
+              />
+              <h4>Institución educativa Tulio Enrique Tascón 2014-2019</h4>
+    
+              <p>
+                <br />
+                I studied my baccalaureate in a commercial college, where I learned
+                the fundamentals of accounting for small and medium-sized companies,
+                bases of their taxation, basic payroll management, Excel management,
+                English focused on business, and I studied entrepreneurship courses
+                where we had as final evaluation the exposition of our project at an
+                entrepreneurship fair open to the entire municipality.
+              </p></strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+-->
