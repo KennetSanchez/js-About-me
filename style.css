@@ -3,15 +3,16 @@
 body {
   font-family: "Roboto", sans-serif;
   background: #202025;
-  
+  padding-top: 5%;
 }
 
-.navbar-light {
-  color: white;
+#personalData{
+  padding-left: 3%;
 }
-
 .container {
   margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: #fffffe;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -20,8 +21,15 @@ body {
   box-shadow: 17px 17px 34px #0c0c0f, -17px -17px 34px #202025;
 }
 
-p {
+.container p{
   margin-right: 20%;
+  text-align: justify;
+  padding-bottom: 5%;
+}
+
+.container h2{
+  padding-top: 2%;
+  padding-left: 2%;
 }
 
 .educationLogo {
@@ -35,13 +43,61 @@ p {
 
 i {
   font-size: 1.5cm;
-  color: #7f5af0;
- 
+  color: #7f5af0; 
 }
 
-#socialMedia {
-  padding-left: 30%;
+#project1{
+  background-color: #2cb67d;
+  border-radius: 50px;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
+
+#project2{
+  background-color: #7f5af0;
+  border-radius: 50px;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+a{
+  color: white;
+}
+
+#portfolio p{
+  padding-top: 5%;
+}
+
+#portfolio img{
+  max-width: 300px;
+  max-height: 300px;
+  padding-top: 7%;
+  border-radius: 50px;  
+}
+
+#project2 p{
+  padding-left: 10%;
+}
+
+#icons{
+  display: flex;
+  flex-direction: row;
+  padding-left: 37%;
+}
+
+#extraInfo{
+  color: white;
+  text-align: center;
+}
+
+#extraInfo a{
+color: white;
+}
+
 /* Bootstrap customization */
 
 .navbar-light .navbar-brand {

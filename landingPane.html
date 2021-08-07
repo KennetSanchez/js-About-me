@@ -22,11 +22,11 @@
 
     <nav
       id="menu"
-      class="navbar navbar-expand-lg navbar-light"
+      class="navbar fixed-top navbar-expand-lg navbar-light"
       style="background-color: #7f5af0; color: white"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Who i am</a>
+        <a class="navbar-brand" href="#personalData">Who i am</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,10 +41,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#studies">My studies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
+              <a class="nav-link" href="#courses">Extracurricular education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#socialMedia">Contact me</a>
             </li>
           </ul>
         </div>
@@ -173,8 +179,48 @@
         </li>
       </ul>
     </section>
-    <section id="portfolio" class="container"></section>
+    <section id="portfolio" class="container">
+      <h2>Projects I've worked in</h2>
+      <section id="project1">
+        <section>
+          <p>
+            <a href="https://github.com/KennetSanchez/jfx-school-manager"
+              >School manager</a
+            >
+            is a software developed in java and javafx, for the “Centro de
+            educación individualizada”, a small school in the city of Cali. This
+            software is designed to facilitate the recording, editing, and
+            management of basic information about students. The program
+            calculates how much students must pay based on the information
+            provided, allows updating this data, and registering whether or not
+            a student owes money.
+          </p>
+        </section>
+        <section>
+          <img
+            src="https://blush.design/api/download?shareUri=hE0Q9SUROrGiGcXx&c=Skin_0%7Ec68e80-0.5%7E583318&bg=2cb67d&w=800&h=800&fm=png"
+            alt=""
+          />
+        </section>
+      </section>
+      <section id="project2">
+        <img
+          src="https://blush.design/api/download?shareUri=ZWQ6ZCzBEDMOU0pG&c=Skin_0%7Ef7d3bb-0.1%7Ef7d3bb&bg=7f5af0&w=800&h=800&fm=png"
+          alt=""
+        />
+        <p>
+          <a href="https://github.com/Mateo698/java-budget4u">Budget4U</a> is a
+          software developed in java and javafx that aims to help its users
+          better manage their finances. The program allows you to record income,
+          expenses, and categorize them as regular and irregular, this helps the
+          program automate the registration of regular income and expenses. It
+          also allows you to categorize them as loans, and make a short
+          description to facilitate the understanding of the record.
+        </p>
+      </section>
+    </section>
     <section id="socialMedia" class="container">
+      <h2>Contact</h2>
       <script>
         function github() {
           window.open("https://github.com/KennetSanchez");
@@ -185,6 +231,12 @@
             "https://www.linkedin.com/in/kennet-santiago-sánchez-roldán-2a7191216/"
           );
         }
+
+        function sendMail() {
+          window.open(
+            "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=1006229463@u.icesi.edu.co"
+          );
+        }
       </script>
       <section id="icons">
         <button type="button" id="buttons-sm" class="btn btn-link">
@@ -193,8 +245,24 @@
         <button type="button" id="buttons-sm" class="btn btn-link">
           <i class="fab fa-linkedin" onclick="linkedin()"></i>
         </button>
+        <button type="button" id="buttons-sm" class="btn btn-link">
+          <i class="fas fa-mail-bulk" onclick="sendMail()"></i>
+        </button>
       </section>
     </section>
+
+    <section id="extraInfo">
+      <ul>
+        <li>
+          <a href="https://fontawesome.com">Check out the source of the icons</a>
+        </li>
+        <li>
+          <a href="https://blush.design">Check out the source of the illustrations</a>
+        </li>
+       
+      </ul>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -202,59 +270,3 @@
     ></script>
   </body>
 </html>
-
-<!--
-  <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Institución educativa Tulio Enrique Tascón
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong><img
-                src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/6420172/image/411751df820e24e371bc5141416604ae"
-                alt="school logo"
-                class="educationLogo"
-              />
-              <h4>Institución educativa Tulio Enrique Tascón 2014-2019</h4>
-    
-              <p>
-                <br />
-                I studied my baccalaureate in a commercial college, where I learned
-                the fundamentals of accounting for small and medium-sized companies,
-                bases of their taxation, basic payroll management, Excel management,
-                English focused on business, and I studied entrepreneurship courses
-                where we had as final evaluation the exposition of our project at an
-                entrepreneurship fair open to the entire municipality.
-              </p></strong>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
--->
